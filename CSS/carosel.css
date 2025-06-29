@@ -1,0 +1,172 @@
+/*Carrosel do Produto e Carrsel Depoimentos o mesmo tipo*/
+#Produtos, #Depoimentos{
+    display: flex;
+    justify-content: center;
+    min-height:100vh;
+    padding: 0 35px;
+    background-color: #232f53;
+}
+
+.titulo{
+    height: 100px;
+    margin-top:-150px;
+    color:#fff ;
+    font-size: 80px;
+    text-align: center;
+}
+#Produtos i ,#Depoimentos i{
+  height: 50px;
+  width: 50px;
+  color: #6088ff;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 50%;
+  cursor:pointer;
+  position: absolute;
+  margin-top: 450px;
+    
+}
+#Produtos .fa-angle-left, #Depoimentos .fa-angle-left {
+    margin-left: -950px;
+}
+
+#Produtos .fa-angle-right, #Depoimentos .fa-angle-right {
+   margin-left: 1020px;
+}
+
+#CaroselProduto, #CaroselDepoimentos{
+    max-width: 900px;
+    width: 100%;
+    margin-top: 250px;
+
+}
+#CaroselProduto .Carosel, #CaroselDepoimentos .CaroselDp{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns:calc((100% / 3) - 12px) ;
+    gap: 16px;
+    overflow: hidden;
+}
+.Carosel.dragging .slider, .CaroselDp.dragging .sliderDp{
+    cursor:grab ;
+    user-select: none;
+}
+.Carosel:where(.slider, .produto), .CaroselDp:where(.sliderDp, .depoimentos){
+    display: flex;
+    align-items: center;
+    justify-content:center ;
+    flex-direction:column ;
+}
+.Carosel .slider, .CaroselDp .sliderDp{
+    list-style: none;
+    border: 2px solid #6b90ff;
+    border-radius:8px ;
+    height: 340px;
+    display: flex;
+    padding-bottom:15px ;
+    align-items: center;
+    justify-content:center ;
+    flex-direction:column ;
+}
+.Carosel, .CaroselDp{
+    margin-top: 100px;
+    margin-left: 40px;
+}
+
+.slider .produto img{
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-left: 50px;
+    scroll-snap-align: start;
+}
+.slider h2{
+    text-align: center;
+    color: #6088ff;
+    margin-top: 5px;
+}
+.slider p{
+    color: #fff;
+    text-align: justify; 
+    width: 250px;
+    margin-top: 5px;
+}
+
+
+
+/*Mudanças no Carosel do Depoimentos*/
+.sla{
+    height: 100px;
+    margin-top:-150px;
+    color:#fff ;
+    font-size: 65px;
+    text-align: center;
+}
+.sliderDp .depoimentos img{
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 70%;
+    scroll-snap-align: start;
+}
+.fotos{
+    margin-top: 35px;
+}
+.nome{
+    margin-left: 80px;
+    margin-top: -55px;
+    color: #6b90ff;
+}
+.depoimentos p{
+    text-align: justify;
+    margin-top: 40px;
+    width: 250px;
+    color: #6088ff;
+}
+.Estrelas{
+    margin-top: 15px;
+    margin-left: 170px;
+}
+#Depoimentos i{
+    display: none;
+}
+
+
+@media(max-width:760px){
+
+    /*Carosel Produto e Carosel Depoimentos*/
+    #CaroselProduto .Carosel, #CaroselDepoimentos .CaroselDp{
+        grid-auto-columns: 100%;
+    }
+    #CaroselProduto, #CaroselDepoimentos{
+        margin-left: 270px;
+    }
+    #CaroselDepoimentos{
+        margin-top: 89px;
+     }
+    .titulo{
+        margin-left: -250px;
+        text-align: center;
+    }
+    .sla{
+        width: 400px;
+        margin-top: 50px;
+        text-align: center;
+    }
+    .slider, .sliderDp{
+        width: 300px;
+    }
+    #Produtos .fa-angle-left,   #Depoimentos .fa-angle-left {
+        margin-left: -360px;
+    }
+
+    #Produtos .fa-angle-right,#Depoimentos .fa-angle-right {
+        margin-left:399px;
+    }
+    #Depoimentos i{
+        display: inline;
+        margin-top: 500px;
+    }
+    /*vim do Carosel Produto e Depoimento*/
+}
