@@ -2,7 +2,7 @@
 #Produtos, #Depoimentos{
     display: flex;
     justify-content: center;
-    min-height:100vh;
+    min-height:125vh;
     padding: 0 35px;
     background-color: #232f53;
 }
@@ -40,6 +40,11 @@
     margin-top: 250px;
 
 }
+.sliderDp:hover{/*efeito*/
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
 #CaroselProduto .Carosel, #CaroselDepoimentos .CaroselDp{
     display: grid;
     grid-auto-flow: column;
