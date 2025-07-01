@@ -24,7 +24,7 @@
   cursor:pointer;
   position: absolute;
   margin-top: 450px;
-    
+  transform: translateY(-50%);
 }
 #Produtos .fa-angle-left, #Depoimentos .fa-angle-left {
     margin-left: -950px;
@@ -50,7 +50,18 @@
     grid-auto-flow: column;
     grid-auto-columns:calc((100% / 3) - 12px) ;
     gap: 16px;
-    overflow: hidden;
+    overflow-x:auto;
+    scroll-snap-type:x mandatory ;
+    scroll-behavior: smooth;
+    scrollbar-width: 0;
+}
+.Carosel::-webkit-scrollbar, .CaroselDp::-webkit-scrollbar{
+    display: none;
+    
+}
+.Carosel.dragging, .CaroselDp.dragging{
+    scroll-behavior: auto;
+    scroll-snap-type:none;
 }
 .Carosel.dragging .slider, .CaroselDp.dragging .sliderDp{
     cursor:grab ;
@@ -63,6 +74,7 @@
     flex-direction:column ;
 }
 .Carosel .slider, .CaroselDp .sliderDp{
+    scroll-snap-align: start;
     list-style: none;
     border: 2px solid #6b90ff;
     border-radius:8px ;
@@ -172,6 +184,9 @@
     #Depoimentos i{
         display: inline;
         margin-top: 500px;
+    }
+    #CaroselProduto .Carosel, #CaroselDepoimentos .CaroselDp{
+        gap: 25px;
     }
     /*vim do Carosel Produto e Depoimento*/
 }
