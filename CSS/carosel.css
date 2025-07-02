@@ -137,8 +137,10 @@
     border-radius: 70%;
     scroll-snap-align: start;
 }
-.fotos{
+.sliderDp img{
     margin-top: 35px;
+    width: 50px;
+    height: 90px;
 }
 .nome{
     margin-left: 80px;
