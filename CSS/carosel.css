@@ -102,12 +102,22 @@
     text-align: center;
     color: #6088ff;
     margin-top: 5px;
+    font-size: 20px;
 }
 .slider p{
     color: #fff;
     text-align: justify; 
     width: 250px;
+    font-size: 15px;
     margin-top: 5px;
+}
+.imagem1{
+    margin-top: -12px;
+}
+
+.txt1{
+    font-size: 15px;
+
 }
 
 
