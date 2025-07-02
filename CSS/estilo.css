@@ -19,7 +19,7 @@ header {
 
 #QuemSomos{
     width: 100%;
-    
+    background: linear-gradient(#232f53, #fff);
 }
 .containerSomos{
     width: 80vw;
@@ -65,7 +65,7 @@ header {
 
 #Orcamento{
     width: 100%;
-    background-color: #fff;
+    background: linear-gradient(#232f53, #fff);
 }
 .containerOrcamento{
     width: 80vw;
