@@ -5,7 +5,19 @@ function enviarMensagem() {
   var url = "https://wa.me/" + numeroTelefone + "?text=" + encodeURIComponent(mensagem);
   window.open(url, '_blank');
 }
+// função para enviar o email
 
+function enviarEmail() {
+  var destinatario = "zero11carstudio@gmail.com";
+  var assunto = "Solicitação de Orçamento";
+  var corpo = "Olá, gostaria de solicitar um orçamento para os serviços da Zero11 Car Studio.";
+
+  var url = "mailto:" + destinatario
+          + "?subject=" + encodeURIComponent(assunto)
+          + "&body=" + encodeURIComponent(corpo);
+
+  window.location.href = url;
+}
 // Menu Hamburguer
 class MenuMobile {
   constructor(menuMobile, navlist, navLinks) {
