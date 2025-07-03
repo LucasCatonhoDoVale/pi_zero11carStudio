@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-    background-color: #232f53;
+    background-color: #455ca2;
 }
 header {
     width: 100%;
@@ -19,7 +19,7 @@ header {
 
 #QuemSomos{
     width: 100%;
-    background: linear-gradient(#232f53, #fff);
+    background-color: #fff;
 }
 .containerSomos{
     width: 80vw;
@@ -47,7 +47,7 @@ header {
 }
 .formtituloSomos{
     font-size: 35px;
-    color: #6b90ff;
+    color: #232f53;
 }
 #psTeextoSomos{
     margin-bottom: 150px;
@@ -65,7 +65,7 @@ header {
 
 #Orcamento{
     width: 100%;
-    background: linear-gradient(#232f53, #fff);
+    background-color: #fff;
 }
 .containerOrcamento{
     width: 80vw;
@@ -132,7 +132,7 @@ header {
 
 #Contato{
     width: 100%;
-    background-color: #232f53;
+    background-color: #455ca2;
 }
 .containerContato, #cazulo{
     width: 80vw;
@@ -213,7 +213,7 @@ header {
 }
 .formSubtituloLogo,.formSubtituloLogo2{
     cursor: pointer;
-    color: #6b90ff;
+    color: #232f53;
 }
 .formSubtituloLogo2{
     cursor: pointer;
@@ -287,7 +287,7 @@ nav li{
 
 .direitos{
     margin-left: 450px;
-    color: #6b90ff;
+    color: #232f53;
     grid-column: 1/7;
     grid-row: 2/4;
 }

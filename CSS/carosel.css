@@ -4,6 +4,7 @@
     justify-content: center;
     min-height:125vh;
     padding: 0 35px;
+    background-color: #455ca2;
 
 }
 
@@ -17,7 +18,7 @@
 #Produtos i ,#Depoimentos i{
   height: 50px;
   width: 50px;
-  color: #6088ff;
+  color: #232f53;
   text-align: center;
   line-height: 50px;
   border-radius: 50%;
@@ -76,7 +77,7 @@
 .Carosel .slider, .CaroselDp .sliderDp{
     scroll-snap-align: start;
     list-style: none;
-    border: 2px solid #6b90ff;
+    border: 2px solid #232f53;
     border-radius:8px ;
     height: 340px;
     display: flex;
@@ -100,7 +101,7 @@
 }
 .slider h2{
     text-align: center;
-    color: #6088ff;
+    color: #232f53;
     margin-top: 5px;
     font-size: 20px;
 }
@@ -137,25 +138,24 @@
     border-radius: 70%;
     scroll-snap-align: start;
 }
-.sliderDp img{
-    margin-top: 35px;
-    width: 50px;
-    height: 90px;
-}
+
 .nome{
     margin-left: 80px;
     margin-top: -55px;
-    color: #6b90ff;
+    color: #232f53;
 }
 .depoimentos p{
     text-align: justify;
     margin-top: 40px;
     width: 250px;
-    color: #6088ff;
+    color: #fff;
 }
-.Estrelas{
-    margin-top: 15px;
+.Estrelas, .Estrelas2{
+    margin-top: 20px;
     margin-left: 170px;
+}
+.Estrelas2{
+    margin-top: 30PX;
 }
 #Depoimentos i{
     display: none;
